@@ -77,10 +77,295 @@
 }
 
 
+
+
+
+
+
+
+
+
+.c-LayoutMultipleColumns {
+    --column-width: 33.33%;
+    --column-margin-side: .5rem;
+    --column-margin-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--column-margin-top) * -1);
+    margin-right: calc(var(--column-margin-side) / 2 * -1);
+    margin-left: calc(var(--column-margin-side) / 2 * -1)
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumns.--Preset1 {
+        --column-width: 50%
+    }
+}
+
+.c-LayoutMultipleColumns.--Preset2 {
+    --column-width: 25%
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumns.--Preset2 {
+        --column-width: 50%
+    }
+}
+
+.c-LayoutMultipleColumns.--Preset3 {
+    --column-width: 25%;
+    --column-margin-top: 60px;
+    --column-margin-side: 40px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumns.--Preset3 {
+        --column-width: 50%;
+        --column-margin-top: 4rem;
+        --column-margin-side: 2.4rem
+    }
+}
+
+.c-LayoutMultipleColumns.--Preset4 {
+    --column-width: 50%;
+    --column-margin-side: 60px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumns.--Preset4 {
+        --column-margin-side: 2rem
+    }
+}
+
+.c-LayoutMultipleColumns.--Preset5 {
+    --column-margin-side: 5px;
+    --column-margin-top: 5px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumns.--Preset5 {
+        --column-margin-side: .5rem;
+        --column-margin-top: .5rem
+    }
+}
+
+.c-LayoutMultipleColumns.--Preset6 {
+    --column-margin-side: 16px;
+    --column-margin-top: .8rem;
+    align-items: center
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumns.--Preset6 {
+        --column-margin-side: 1rem
+    }
+}
+
+.c-LayoutMultipleColumns.--Preset7 {
+    --column-margin-side: 40px;
+    --column-margin-top: 1rem;
+    justify-content: center
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumns.--Preset7 {
+        --column-margin-side: 3rem
+    }
+}
+
+.c-LayoutMultipleColumns__Item {
+    width: calc(var(--column-width) - var(--column-margin-side));
+    margin-top: var(--column-margin-top);
+    margin-right: calc(var(--column-margin-side) / 2);
+    margin-left: calc(var(--column-margin-side) / 2)
+}
+
+.c-LayoutMultipleColumns__Item.--Right {
+    margin-left: auto
+}
+
+.c-LayoutMultipleColumns__Item.--Auto {
+    width: auto
+}
+
+.c-LayoutMultipleColumnsToSingle {
+    --column-width: 25%;
+    --column-margin-side: 20px;
+    --column-margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--column-margin-top) * -1);
+    margin-right: calc(var(--column-margin-side) / 2 * -1);
+    margin-left: calc(var(--column-margin-side) / 2 * -1)
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle {
+        --column-margin-top: 1rem;
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset1 {
+    --column-width: 33.33%
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset2 {
+    --column-width: 50%;
+    --column-margin-side: 40px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset2 {
+        --column-margin-top: 4rem
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset3 {
+    --column-width: 50%;
+    --column-margin-side: 100px;
+    align-items: center
+}
+
+@media (max-width: 1024px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset3 {
+        --column-margin-side: 60px
+    }
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset3 {
+        flex-flow:column-reverse;
+        --column-margin-top: 4rem
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset4 {
+    --column-width: 50%;
+    --column-margin-side: 40px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset4 {
+        --column-margin-top: 1rem
+    }
+}
+
 .c-LayoutMultipleColumnsToSingle.--Preset5 {
     --column-width: 33.33%;
     --column-margin-side: 2px
 }
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset5 {
+        --column-margin-top: .2rem
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset6 {
+    --column-width: 50%;
+    --column-margin-side: 80px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset6 {
+        --column-margin-top: 3rem
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset7 {
+    --column-width: 50%;
+    --column-margin-side: 20px;
+    --column-margin-top: 2rem;
+    justify-content: center
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset8 {
+    --column-width: 50%;
+    --column-margin-side: 40px;
+    --column-margin-top: 40px
+}
+
+@media (max-width: 1023px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset8 {
+        --column-margin-side: 20px;
+        --column-margin-top: 20px
+    }
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset8 {
+        --column-margin-top: 2rem
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset9 {
+    --column-width: 50%;
+    --column-margin-side: 10px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset9 {
+        --column-margin-top: 1rem
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle.--Preset10 {
+    --column-width: 50%;
+    --column-margin-side: 60px
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Preset10 {
+        --column-margin-top: 4rem
+    }
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle.--Reverse {
+        flex-flow:column-reverse
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle__Item {
+    width: calc(var(--column-width) - var(--column-margin-side));
+    margin-top: var(--column-margin-top);
+    margin-right: calc(var(--column-margin-side) / 2);
+    margin-left: calc(var(--column-margin-side) / 2);
+    flex-shrink: 0
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle__Item {
+        width:100%;
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+.c-LayoutMultipleColumnsToSingle__Summary {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%
+}
+
+@media (max-width: 767px) {
+    .c-LayoutMultipleColumnsToSingle__Summary {
+        max-width:none
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
