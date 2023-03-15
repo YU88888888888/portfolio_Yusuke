@@ -88,7 +88,29 @@
 
 
 
+.c-ButtonBorder__Icon {
+    margin-right: 1rem
+}
 
+.c-ButtonBorder__Icon use {
+    fill: var(--color)
+}
+
+.c-ButtonBorder__Icon.--Pdf {
+    width: 1.5rem
+}
+
+.c-ButtonBorder__Text {
+    display: block;
+    line-height: 1.4;
+    text-align: center
+}
+
+.c-ButtonBorder__Arrow {
+    position: absolute;
+    right: 20px;
+    width: .8rem
+}
 
 
 .c-ButtonBorder {
