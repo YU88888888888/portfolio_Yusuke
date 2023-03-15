@@ -85,6 +85,28 @@
 
 
 
+
+
+
+
+
+
+.c-ButtonBorder {
+    --color: #1E1E1E;
+    --bg-color: transparent;
+    --border-color: #1E1E1E;
+    border: solid 2px var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 40px;
+    color: var(--color);
+    background: var(--bg-color);
+    min-height: 65px;
+    position: relative;
+    font-size: 1.6rem
+}
+
 .c-LayoutMultipleColumns {
     --column-width: 33.33%;
     --column-margin-side: .5rem;
