@@ -160,8 +160,8 @@
 }
 
 .c-LayoutMultipleColumns.--Preset5 {
-    --column-margin-side: 5px;
-    --column-margin-top: 5px
+    --column-margin-side: 10px;
+    --column-margin-top: 10px
 }
 
 @media (max-width: 767px) {
