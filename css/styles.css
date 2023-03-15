@@ -76,6 +76,17 @@
   }
 }
 
+
+.c-LayoutMultipleColumnsToSingle.--Preset5 {
+    --column-width: 33.33%;
+    --column-margin-side: 2px
+}
+
+
+
+
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
